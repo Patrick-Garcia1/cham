@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bad Script', cursive;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+h2{
+    display: flex;
+    color: transparent;
+    font-size: 15vw;
+}
+h2 span{
+    animation: animate 8s linear infinite;
+    animation-delay: calc(0.05s * var(--i));
+}
+
+@keyframes animate{
+    0%{
+        color: rgb(179, 243, 141);
+        filter: hue-rotate(40deg);
+        text-shadow: 0 0 5px black,
+        0 0 10px black,
+        0 0 20px black;
+    }
+    
+    
+    50%{
+        color: black;
+        filter: hue-rotate(360deg);
+        text-shadow: 0 0 40px #f00,
+        0 0 20px #f00,
+        0 0 40px #f00,
+        0 0 60px #f00,
+        0 0 200px #f00;
+        
+    }
+    90%{
+        color: black;
+        filter: hue-rotate(40deg);
+        text-shadow: 0 0 5px black,
+        0 0 10px black,
+        0 0 20px black;
+    }
+}
